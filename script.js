@@ -8,7 +8,7 @@ window.onload = function(e) {
 
 }
 
-//  limpar os campos de entrada de dados
+//  Limpar os campos de entrada de dados
 function limparcampos() {
 
   const peso = document.getElementById("peso");
@@ -23,7 +23,7 @@ function limparcampos() {
 
 }
 
-// calcula o IMC e faz verificação
+// Cálcula o IMC e faz validação
 function calcularImc() {
 
   const peso = document.getElementById("peso");
@@ -51,7 +51,7 @@ function calcularImc() {
 }
 
 
-// VErifica a faixa de IMC.
+// Verifica a faixa de IMC.
 function tabelapeso(imc) {
 
   let mensagem = "";
