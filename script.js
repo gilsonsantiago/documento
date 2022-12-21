@@ -1,9 +1,20 @@
 
 const calcular = document.getElementById("calcular");
+const limpar = document.getElementById("limpar");
 
 window.onload = function(e) {
 
   calcular.addEventListener("click", calcularImc);
+  limpar.addEventListener("click", limparcampos)
+
+}
+
+function limparcampos() {
+  const peso = document.getElementById("peso");
+  const altura = document.getElementById("altura");
+
+  peso.value = "";
+  altura.value = "";
 
 }
 
