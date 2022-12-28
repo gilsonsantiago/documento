@@ -28,7 +28,7 @@ function calcularImc() {
 
   const peso = document.getElementById("peso");
   const altura = document.getElementById("altura");
-  const resultado = document.getElementById("resultado");
+  //const resultado = document.getElementById("resultado");
 
   let mensagem = "";
 
@@ -38,16 +38,22 @@ function calcularImc() {
 
   } else {
 
-    let imc = peso.value / (altura.value * altura.value);
-
-    mensagem = "IMC = " + imc.toFixed(2) + tabelapeso(imc);
-
     const resultado = document.getElementById("resultado");
 
-    resultado.innerHTML = mensagem;
+    resultado.innerHTML = calcularImcValor(peso.value,altura.value );
 
   }
 
+}
+
+
+//  calcular o IMC
+function calcularImcValor (peso, altura){
+
+ let imc = peso / (altura * altura);
+
+  return ("IMC = " + imc.toFixed(2) + tabelapeso(imc));
+  
 }
 
 
