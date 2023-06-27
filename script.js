@@ -4,7 +4,7 @@ const limpar   = document.getElementById("limpar");
 window.onload = function(e) {
 
   calcular.addEventListener("click", calcularImc);
-  limpar.addEventListener("click"  , limparcampos)
+  limpar.addEventListener("click"  , limparcampos)  
 
 }
 
@@ -85,6 +85,7 @@ function tabelapeso(imc) {
   }
 
   return mensagem;
+  
 
 }
 
