@@ -84,8 +84,7 @@ function tabelapeso(imc) {
 
   }
 
-  return mensagem;
-  
+  return mensagem;    
 
 }
 
